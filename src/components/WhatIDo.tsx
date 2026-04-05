@@ -87,20 +87,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>PRODUCT & STRATEGY</h3>
+              <h4>Building 0→1 Products That Scale</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                Product manager driving end-to-end strategy—from PRDs and
+                marketplace design to go-to-market execution—turning ideas
+                into shipped products that grow.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">MVP Development</div>
+                <div className="what-tags">PRDs &amp; RICE/MoSCoW</div>
+                <div className="what-tags">Marketplace Design</div>
+                <div className="what-tags">UX Flow</div>
+                <div className="what-tags">AARRR &amp; Cohorts</div>
+                <div className="what-tags">KPI Design</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +125,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>TECHNICAL & EXECUTION</h3>
+              <h4>Engineering AI-Powered Solutions</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                Hands-on builder shipping full-stack products with AI
+                integration—from web architecture and workflow automation
+                to research and hardware design.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">AI Integration</div>
+                <div className="what-tags">Git &amp; Web Architecture</div>
+                <div className="what-tags">Cadence &amp; Vivado</div>
+                <div className="what-tags">Agile &amp; Automation</div>
               </div>
               <div className="what-arrow"></div>
             </div>

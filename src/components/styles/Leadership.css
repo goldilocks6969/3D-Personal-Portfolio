@@ -1,0 +1,199 @@
+/* ── Leadership & Distinction Section ── */
+.leadership-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0;
+}
+
+.leadership-section h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.leadership-section h2 > span {
+  color: var(--accentColor);
+}
+
+.leadership-container {
+  margin: auto;
+}
+
+/* ── Card Grid ── */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.leadership-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.leadership-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accentColor),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.leadership-card:hover {
+  border-color: rgba(94, 234, 212, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(94, 234, 212, 0.05);
+}
+
+.leadership-card:hover::after {
+  opacity: 1;
+}
+
+/* ── Icon ── */
+.leadership-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  background: rgba(94, 234, 212, 0.08);
+  border: 1px solid rgba(94, 234, 212, 0.12);
+  color: var(--accentColor);
+  transition: all 0.3s ease;
+}
+
+.leadership-card:hover .leadership-icon {
+  background: rgba(94, 234, 212, 0.14);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.12);
+}
+
+/* ── Content ── */
+.leadership-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.leadership-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.leadership-highlight {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--accentColor);
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+.leadership-description {
+  font-weight: 200;
+  color: #adacac;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+
+/* ── Background Index Number ── */
+.leadership-index {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 56px;
+  font-weight: 700;
+  opacity: 0.05;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 1400px) {
+  .leadership-section h2 {
+    font-size: 50px;
+  }
+
+  .leadership-content h3 {
+    font-size: 20px;
+  }
+
+  .leadership-grid {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .leadership-index {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .leadership-section {
+    padding: 50px 0;
+  }
+
+  .leadership-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .leadership-card {
+    flex-direction: column;
+    padding: 28px 24px;
+  }
+
+  .leadership-content h3 {
+    font-size: 18px;
+  }
+
+  .leadership-description {
+    font-size: 14px;
+  }
+
+  .leadership-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .leadership-index {
+    font-size: 40px;
+  }
+}

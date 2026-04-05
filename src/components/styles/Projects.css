@@ -1,0 +1,223 @@
+/* ── Projects Section ── */
+.projects-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0;
+}
+
+.projects-section h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.projects-section h2 > span {
+  color: var(--accentColor);
+}
+
+.projects-container {
+  margin: auto;
+}
+
+/* ── Project Cards Grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accentColor),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(94, 234, 212, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(94, 234, 212, 0.05);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* ── Card Header ── */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-number {
+  font-size: 48px;
+  font-weight: 600;
+  opacity: 0.1;
+  line-height: 1;
+}
+
+.project-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accentColor);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(94, 234, 212, 0.08);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(94, 234, 212, 0.15);
+}
+
+/* ── Card Body ── */
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-title-row h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.project-link {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #eae5ec;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.15);
+}
+
+.project-description {
+  font-weight: 200;
+  color: #adacac;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ── Tags ── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.project-tag {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-tag {
+  border-color: rgba(94, 234, 212, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 1400px) {
+  .projects-section h2 {
+    font-size: 50px;
+  }
+
+  .project-title-row h3 {
+    font-size: 22px;
+  }
+
+  .project-number {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projects-section {
+    padding: 50px 0;
+  }
+
+  .projects-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    padding: 28px;
+  }
+
+  .project-title-row h3 {
+    font-size: 20px;
+  }
+
+  .project-number {
+    font-size: 32px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+}
