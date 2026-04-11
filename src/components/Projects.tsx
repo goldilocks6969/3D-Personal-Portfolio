@@ -20,6 +20,15 @@ const projects = [
       "Developed a founder diagnostic and growth blueprint for a Netherlands-based startup, analysing product-market fit, monetisation, and scalable growth strategy in collaboration with the founding team.",
     link: null,
   },
+  {
+    number: "03",
+    title: "The Drunk Qubit",
+    date: "Apr 2026",
+    tags: ["Quantum Finance", "Python", "PennyLane", "yfinance", "Pandas"],
+    description:
+      "Built a quantum walk-based momentum signal using PennyLane quantum circuits and rolling Hurst exponent analysis, tested on 30 large-cap equities with permutation testing for statistical validation.",
+    link: "https://drunkquibit.netlify.app",
+  },
 ];
 
 const Projects = () => {
